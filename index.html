@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Joker-Inu" />
+    <title>Joker Inu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0adb577dfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">JK</div>
+        <ul class="navbar-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Utilities</a></li>
+          <li><a href="#">Tokenomics</a></li>
+          <li><a href="#">How to buy</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <a href="#" class="btn">JOIN US</a>
+      </div>
+      <main>
+        <div class="castle"></div>
+        <div class="car-container">
+          <div class="car-body">
+            <img src="./images/Scoobs.png" alt="car" />
+            <img id="front-wheel" src="./images/Wheel-Back.png" alt="wheel" />
+            <img id="rear-wheel" src="./images/Wheel-Back.png" alt="wheel" />
+          </div>
+        </div>
+        <div class="heading">
+          <h1>JOKER INU</h1>
+          <p>
+            A fun way to earn throught one of the best ecosystem in whole
+            crypto-space.
+          </p>
+          <div class="main-button">
+            <a class="btn filled" href="#">Buy Now</a>
+            <a class="btn" href="#">Whitepaper</a>
+          </div>
+        </div>
+        <!-- <div class="down">^</div> -->
+      </main>
+      <div id="about">
+        <h1>About</h1>
+        <div class="about_container">
+          <div class="about_content">
+            <h2>Who we are</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              explicabo itaque est recusandae placeat modi nulla maiores eaque
+              vel aspernatur? Molestiae rem assumenda cum quaerat, iste
+              voluptatibus quod culpa aliquam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              explicabo itaque est recusandae placeat modi nulla maiores eaque
+              vel aspernatur? Molestiae rem assumenda cum quaerat, iste
+              voluptatibus quod culpa aliquam!
+            </p>
+          </div>
+          <div class="about_image"></div>
+        </div>
+      </div>
+      <div id="tokenomics">
+        <h1>Tokenomics</h1>
+        <div class="tokenomics_container">
+          <div class="tokenomics_content">
+            <h2>Taxes Explained</h2>
+            <p>
+              3% reserved for Marketing to get the most exposure for reaching to
+              the most interested investors and building the community.
+            </p>
+            <p>
+              2% reserved for Raffle and will be used for our raffel dapp which
+              is will be fair for everyone without any intervention.
+            </p>
+            <p>
+              2% reserved for Team salary which we are discloseing publicly and
+              team will have no tokens to ensure our investors that your
+              investment is safe.
+            </p>
+            <p>
+              3% reserved for Liquidity Pool which will automatically go into
+              building up a strong and healthy liquidity.
+            </p>
+          </div>
+          <canvas id="tax"></canvas>
+        </div>
+      </div>
+      <div id="roadmap">
+        <h1>Roadmap</h1>
+        <div class="phase">
+          <div class="phase_content" style="border-left: 2px solid #ab5dee">
+            <h2>Stage 1</h2>
+            <ul>
+              <li>Social Media Presence</li>
+              <li>Website Deployment</li>
+              <li>Draft Whitepaper</li>
+              <li>Contract Audit</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase reverse">
+          <div class="phase_content left">
+            <h2>Stage 2</h2>
+            <ul>
+              <li>Coin Gecko listing</li>
+              <li>CoinMarketCap listing</li>
+              <li>Whitepaper release</li>
+              <li>Contract Audi</li>
+              <li>Launch</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase">
+          <div class="phase_content" style="border-left: 2px solid #ab5dee">
+            <h2>Stage 3</h2>
+            <ul>
+              <li>JokerSwap</li>
+              <li>JokerDash</li>
+              <li>JOKER-INU Merch</li>
+              <li>NFTs release</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase reverse">
+          <div class="phase_content left bottom">
+            <h2>Stage 4</h2>
+            <ul>
+              <li>Small CEXs listing</li>
+              <li>Game Release</li>
+              <li>Launchpad/Incubator</li>
+              <li>BSC bridge</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <!-- <div class="logo"></div> -->
+          <p>&copy; Joker-Inu 2022. All rights reserved.</p>
+        </div>
+        <div class="social">
+          <ul class="social_list">
+            <li>
+              <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </li>
+            <li class="middle_social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const tax = document.getElementById("tax");
+      const taxChart = new Chart(tax, {
+        type: "doughnut",
+        data: {
+          labels: ["Marketing", "Raffle", "Team", "Liquidity"],
+          datasets: [
+            {
+              data: [3, 2, 2, 3],
+              backgroundColor: [
+                "rgba(171, 93, 238)",
+                "rgba(190, 128, 255)",
+                "rgba(29, 161, 31)",
+                "rgba(29, 221, 51)",
+              ],
+              borderColor: [
+                "rgba(171, 93, 238)",
+                "rgba(190, 128, 255)",
+                "rgba(29, 161, 31)",
+                "rgba(29, 221, 51)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
