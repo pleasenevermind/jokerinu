@@ -3,6 +3,12 @@
 /* h1 {
   font-family: "Shadows Into Light", cursive;
 } */
+:root {
+  --dark: #191919;
+  --light: #fff;
+  --primary: #ab5dee;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,14 +17,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #191919;
-  color: #fff;
+  background-color: var(--light);
+  color: var(--dark);
   font-family: "Poppins", sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--dark);
 }
 
 ul {
@@ -53,34 +59,28 @@ ul {
 }
 
 .navbar-list > li > a:hover {
-  color: #ab5dee;
+  color: var(--primary);
   transition: 0.3s ease;
 }
 
-.logo {
-  background-color: #ab5dee;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
+.logo > img {
+  width: 80px;
 }
 
 .btn {
-  border: 1px solid #fff;
+  border: 1px solid var(--primary);
   border-radius: 4px;
   padding: 10px 15px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
+  color: var(--primary);
 }
 
 .btn:hover {
-  background: #ab5dee;
-  border: 1px solid #ab5dee;
-  color: #fff;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
   transition: 0.3s ease;
 }
 
@@ -157,7 +157,7 @@ main {
 .heading > h1 {
   font-size: 600%;
   margin: 0;
-  color: #ab5dee;
+  color: var(--primary);
   font-weight: 900;
   font-style: italic;
   /* font-family: "Shadows Into Light", cursive; */
@@ -174,8 +174,9 @@ main {
 }
 
 .filled {
-  border: 1px solid #ab5dee;
-  background: #ab5dee;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: var(--light);
 }
 
 .filled:hover {
@@ -184,11 +185,11 @@ main {
 }
 
 .down {
-  background-color: #ab5dee;
+  background-color: var(--primary);
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  color: #fff;
+  color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +208,7 @@ main {
 #about > h1,
 #roadmap > h1,
 #tokenomics > h1 {
-  color: #ab5dee;
+  color: var(--primary);
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 5px;
 }
@@ -223,7 +224,7 @@ main {
 }
 
 .about_image {
-  background: #ab5dee;
+  background: var(--primary);
   width: 300px;
   height: 400px;
   margin: auto;
@@ -263,15 +264,15 @@ main {
 }
 
 .phase_content {
-  border-top: 2px solid #ab5dee;
+  border-top: 2px solid var(--primary);
   text-align: right;
   width: 100%;
 }
 
 .left {
   text-align: left;
-  border-right: 2px solid #ab5dee;
-  border-top: 2px solid #ab5dee;
+  border-right: 2px solid var(--primary);
+  border-top: 2px solid var(--primary);
 }
 
 .blank {
@@ -299,13 +300,26 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
+  font-size: 24px;
+}
+
+.social_list > li > a:hover {
+  color: var(--primary);
 }
 
 .middle_social {
   margin: 0 30px;
 }
 
+.joker_main {
+  max-width: 33%;
+}
+
 @media screen and (max-width: 900px) {
+  .joker_main {
+    max-width: 100%;
+  }
   p {
     opacity: 0.9;
     font-size: 14px;
@@ -352,7 +366,7 @@ main {
     padding: 0 0 10%;
   }
   .bottom {
-    border-bottom: 2px solid #ab5dee;
+    border-bottom: 2px solid var(--primary);
   }
   .blank {
     display: none;
