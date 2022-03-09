@@ -4,9 +4,13 @@
   font-family: "Shadows Into Light", cursive;
 } */
 :root {
+  --grey: #222;
   --dark: #191919;
   --light: #fff;
-  --primary: #ab5dee;
+  --primary: #270847;
+  --primary2: #11031f;
+  --red: #cc0000;
+  --green: limegreen;
 }
 
 html {
@@ -17,14 +21,15 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--primary2);
+  color: var(--light);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--light);
 }
 
 ul {
@@ -37,11 +42,9 @@ ul {
   padding: 1% 10%;
   max-width: 1200px;
   margin: auto;
-  /* background: url(./images/castle.jpeg); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar {
@@ -59,8 +62,12 @@ ul {
 }
 
 .navbar-list > li > a:hover {
-  color: var(--primary);
+  color: var(--green);
   transition: 0.3s ease;
+}
+
+.logo {
+  height: 80px;
 }
 
 .logo > img {
@@ -68,18 +75,18 @@ ul {
 }
 
 .btn {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--light);
   border-radius: 4px;
   padding: 10px 15px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--light);
 }
 
 .btn:hover {
-  background: var(--primary);
-  border: 1px solid var(--primary);
+  background: var(--green);
+  border: 1px solid var(--green);
   color: var(--light);
   transition: 0.3s ease;
 }
@@ -89,6 +96,62 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rise-fadein {
+  0% {
+    top: -150%;
+    opacity: 0;
+  }
+  100% {
+    top: 10%;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 30%;
+  }
+}
+
+.castle {
+  position: absolute;
+  bottom: -10%;
+  width: 100%;
+  max-width: 1600px;
+  z-index: -1;
+  opacity: 0;
+  animation: fadein 4s 1 forwards;
+}
+
+.moon {
+  position: absolute;
+  bottom: 150%;
+  animation: rise-fadein 2s 1 forwards;
+  width: 100%;
+  max-width: 1600px;
+  z-index: -2;
+  animation-delay: 1s;
+}
+
+.car {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: -50%;
+  animation: slide 5s 1 forwards;
+  animation-delay: 4s;
 }
 
 .car-container {
@@ -152,14 +215,23 @@ main {
   text-align: center;
   width: 100%;
   letter-spacing: 2px;
+  z-index: -2;
+  opacity: 0;
+  animation: fadein 3s 1 forwards;
+  animation-delay: 3s;
+  margin-top: 25px;
 }
 
 .heading > h1 {
-  font-size: 600%;
+  font-size: 950%;
+  max-width: 1030px;
   margin: 0;
-  color: var(--primary);
+  color: var(--light);
   font-weight: 900;
   font-style: italic;
+  text-shadow: -2px -5px 0 var(--primary), 5px -5px 0 var(--primary),
+    -5px 5px 0 var(--primary), 5px 5px 0 var(--primary);
+  /* background: rgba(0, 0, 0, 0.6); */
   /* font-family: "Shadows Into Light", cursive; */
 }
 
@@ -169,13 +241,9 @@ main {
   margin: auto;
 }
 
-.main-button {
-  margin: 30px 0;
-}
-
 .filled {
-  border: 1px solid var(--primary);
-  background: var(--primary);
+  border: 1px solid var(--green);
+  background: var(--green);
   color: var(--light);
 }
 
@@ -200,7 +268,9 @@ main {
 
 #about,
 #roadmap,
-#tokenomics {
+#tokenomics,
+#utilities,
+#team {
   margin: 10% 0;
   text-align: center;
 }
@@ -208,25 +278,64 @@ main {
 #about > h1,
 #roadmap > h1,
 #tokenomics > h1 {
-  color: var(--primary);
+  color: var(--light);
+  font-size: 500%;
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 5px;
 }
 
-.about_container {
+.about_section {
+  background-color: var(--primary2);
+  padding: 5% 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about_container,
+.utilities_container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_container {
+  border-radius: 10px;
+  background: var(--primary);
+  box-shadow: var(--red) 0px 1px 29px 0px;
+}
+
+#about {
+  position: relative;
+}
+
+.about_content > h2 {
+  color: var(--green);
+  font-size: 350%;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  text-align: center;
 }
 
 .about_content {
-  max-width: 500px;
+  max-width: 550px;
+  font-size: larger;
+  border-radius: 10px;
+  padding: 5px 10px 20px;
   margin: auto;
-  text-align: left;
+  text-align: center;
+  color: var(--light);
 }
 
-.about_image {
-  background: var(--primary);
-  width: 300px;
-  height: 400px;
+.about_image > img {
+  max-width: 500px;
+  height: 500px;
+  transform: scaleX(-1);
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.tokenomics_section {
+  padding: 1% 10%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -248,6 +357,122 @@ main {
 .tokenomics_content {
   max-width: 500px;
   margin: auto;
+}
+
+.utilities_section,
+.faq_section {
+  background-color: var(--primary);
+  padding: 1% 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.utilities_container {
+  flex-direction: column;
+}
+
+.nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft > img {
+  width: 20%;
+  margin: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.nft > img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: var(--red);
+  border-radius: 4px;
+  transition: 0.3s ease;
+  margin: 5% 0;
+  max-width: 790px;
+}
+
+.card:hover {
+  box-shadow: var(--green) 0px 10px 29px 0px;
+}
+
+.content {
+  padding: 10%;
+  margin: auto;
+  text-align: left;
+}
+
+.card > img {
+  width: 150%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.card_hor {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card_hor > div {
+  /* max-height: 450px; */
+  flex-direction: column;
+}
+
+.card_hor > div > img {
+  max-width: 300px;
+}
+
+.card_hor > div > div {
+  margin-top: 50px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.float {
+  box-shadow: var(--green) 0px 10px 29px 0px;
+}
+
+.team_section {
+  padding: 5% 10%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  background: #270847;
+}
+
+.all_team {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.all_team > div > p {
+  font-weight: 500;
+}
+
+#team > div > img {
+  border-radius: 50%;
+}
+
+.faq > h2 {
+  text-align: center;
+}
+
+details {
+  padding: 1% 0;
 }
 
 #roadmap {
@@ -280,7 +505,9 @@ main {
 }
 
 .footer {
-  padding: 0 0 2%;
+  padding: 2% 10%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -305,7 +532,7 @@ main {
 }
 
 .social_list > li > a:hover {
-  color: var(--primary);
+  color: var(--green);
 }
 
 .middle_social {
@@ -316,7 +543,58 @@ main {
   max-width: 33%;
 }
 
-@media screen and (max-width: 900px) {
+@keyframes slide-mobile {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 5%;
+  }
+}
+
+@keyframes rise-fadein-mobile {
+  0% {
+    top: -150%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .car {
+    animation: slide-mobile 5s 1 forwards;
+    animation-delay: 4s;
+    right: -100%;
+    bottom: 9%;
+    width: 95%;
+    max-width: 600px;
+    z-index: 3;
+  }
+  .moon {
+    animation: rise-fadein-mobile 2s 1 forwards;
+  }
+  .nft {
+    flex-direction: column;
+  }
+  .nft > img {
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+  }
+  .card,
+  .card_hor {
+    flex-direction: column;
+  }
+  .card > img {
+    width: 100%;
+  }
+  #tokenomics > h1 {
+    font-size: 100%;
+  }
   .joker_main {
     max-width: 100%;
   }
@@ -341,6 +619,10 @@ main {
   }
   .container {
     padding: 5% 10%;
+    background: url(./images/castle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .navbar-list {
     display: none;
@@ -348,15 +630,25 @@ main {
   .car-container {
     margin-top: 25%;
   }
+  .heading {
+    z-index: 1;
+  }
   .heading > h1 {
-    margin-top: 40%;
-    font-size: 500%;
+    margin-top: 60%;
+    font-size: 300%;
   }
   .heading > p {
     line-height: 30px;
   }
   .down {
     margin: 10%;
+  }
+  .about_section {
+    padding: 10%;
+  }
+  .about_image > img {
+    width: 100%;
+    height: 100%;
   }
   .about_container,
   .tokenomics_container {
