@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -80,6 +84,43 @@
       <div id="utilities">
         <h1>Utilities</h1>
         <div class="utilities_container">
+          <div class="card float" style="background: #191919;">
+            <div class="content" style="text-align: center;">
+              <h2>Raffle</h2>
+              <p>
+                Joker inu is featuring one of a kind Raffle System, happening every 4-7 days where we will have a reward pool of no more than 30% of the wallet and 1st, 2nd and 3rd postion winners will get 25%, 15% and 10% respectively.
+              </p>
+              <img id="raffle" src="./images/raffle.gif" alt="joker" />
+              <div class="card no-hover" style="background: limegreen;">
+                <div class="content" style="text-align: center;">
+                  <h2>Entry requirements</h2>
+                  <p>
+                    Depending on how many tokens you buy you will go into 4 different ranks, each rank will determine how many eateries you qualify for;
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="background: silver; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+                <div class="content" style="text-align: center; padding: 10px 20px;">
+                  <p style="color: #191919;">1 million to 10 million</p>
+                </div>
+              </div>
+              <div class="card" style="background: #FFD700; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+                <div class="content" style="text-align: center; padding: 10px 20px;">
+                  <p style="color: #191919;">10 million to 50 million</p>
+                </div>
+              </div>
+              <div class="card" style="background: #E5E4E2; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+                <div class="content" style="text-align: center; padding: 10px 20px;">
+                  <p style="color: #191919;">50 million to 200 million</p>
+                </div>
+              </div>
+              <div class="card" style="background: #b9f2ff; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+                <div class="content" style="text-align: center; padding: 10px 20px;">
+                  <p style="color: #191919;">200 million+</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card">
             <div class="content">
               <h2>NFT Collection</h2>
@@ -114,6 +155,17 @@
             <div class="card" style="background: #cc0000">
               <!-- <img src="./images/jkrs.png" alt="joker" /> -->
               <div class="content">
+                <h2>Redustrubtion</h2>
+                <p>
+                  Along with an income from our raffle, we also offer
+                  distribution, it’s safe to say no matter what the community is
+                  always winning.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background: #cc0000">
+              <!-- <img src="./images/jkrs.png" alt="joker" /> -->
+              <div class="content">
                 <h2>JokerSwap</h2>
                 <p>
                   Long down the road, we are planning to introduce the
@@ -132,17 +184,6 @@
                 <p>Limit:<strong> 1 per person</strong></p>
               </div>
             </div> -->
-            <div class="card" style="background: #cc0000">
-              <!-- <img src="./images/jkrs.png" alt="joker" /> -->
-              <div class="content">
-                <h2>Redustrubtion</h2>
-                <p>
-                  Along with an income from our raffle, we also offer
-                  distribution, it’s safe to say no matter what the community is
-                  always winning.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -152,22 +193,22 @@
         <h1>Tokenomics</h1>
         <div class="tokenomics_container">
           <div class="tokenomics_content">
-            <h2>Taxes Explained</h2>
+            <h2 style="opacity: 0.8;"><span>10%</span> Buy/Sell Tax</h2>
             <p>
-              3% reserved for Marketing to get the most exposure for reaching to
+              <span>3%</span> reserved for Marketing to get the most exposure for reaching to
               the most interested investors and building the community.
             </p>
             <p>
-              2% reserved for Raffle and will be used for our raffel dapp which
+              <span>2%</span> reserved for Raffle and will be used for our raffel dapp which
               is will be fair for everyone without any intervention.
             </p>
             <p>
-              2% reserved for Team salary which we are discloseing publicly and
+              <span>2%</span> reserved for Team salary which we are discloseing publicly and
               team will have no tokens to ensure our investors that your
               investment is safe.
             </p>
             <p>
-              3% reserved for Liquidity Pool which will automatically go into
+              <span>3%</span> reserved for Liquidity Pool which will automatically go into
               building up a strong and healthy liquidity.
             </p>
           </div>
@@ -321,7 +362,7 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -340,21 +381,35 @@
               data: [3, 2, 2, 3],
               backgroundColor: [
                 "rgba(171, 93, 238)",
-                "rgba(190, 128, 255)",
+                "rgb(218, 165, 32)",
                 "rgba(29, 161, 31)",
-                "rgba(29, 221, 51)",
+                "rgb(241, 59, 59)",
               ],
               borderColor: [
                 "rgba(171, 93, 238)",
-                "rgba(190, 128, 255)",
+                "rgb(218, 165, 32)",
                 "rgba(29, 161, 31)",
-                "rgba(29, 221, 51)",
+                "rgb(241, 59, 59)",
               ],
               borderWidth: 1,
             },
           ],
         },
       });
+
+      var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
     </script>
   </body>
 </html>

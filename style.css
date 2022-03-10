@@ -231,8 +231,6 @@ main {
   font-style: italic;
   text-shadow: -2px -5px 0 var(--primary), 5px -5px 0 var(--primary),
     -5px 5px 0 var(--primary), 5px 5px 0 var(--primary);
-  /* background: rgba(0, 0, 0, 0.6); */
-  /* font-family: "Shadows Into Light", cursive; */
 }
 
 .heading > p {
@@ -277,11 +275,13 @@ main {
 
 #about > h1,
 #roadmap > h1,
-#tokenomics > h1 {
+#tokenomics > h1,
+#utilities > h1 {
   color: var(--light);
   font-size: 500%;
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 5px;
+  color: var(--green);
 }
 
 .about_section {
@@ -388,6 +388,10 @@ main {
   transform: scale(1.1);
 }
 
+#raffle {
+  width: 70%;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -434,13 +438,20 @@ main {
 }
 
 .card_hor > div > div {
-  margin-top: 50px;
   max-width: 300px;
   text-align: center;
 }
 
 .float {
-  box-shadow: var(--green) 0px 10px 29px 0px;
+  box-shadow: goldenrod 0px 10px 29px 0px;
+}
+
+.float:hover {
+  box-shadow: goldenrod 0px 10px 29px 0px;
+}
+
+.no-hover:hover {
+  box-shadow: none;
 }
 
 .team_section {
@@ -527,10 +538,12 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease;
   font-size: 24px;
 }
 
+.social_list > li > a {
+  transition: 0.3s ease;
+}
 .social_list > li > a:hover {
   color: var(--green);
 }
@@ -541,6 +554,16 @@ details {
 
 .joker_main {
   max-width: 33%;
+}
+
+p > span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--green);
+}
+
+h2 > span {
+  color: var(--green);
 }
 
 @keyframes slide-mobile {
@@ -564,6 +587,9 @@ details {
 }
 
 @media screen and (max-width: 1000px) {
+  #raffle {
+    width: 100%;
+  }
   .car {
     animation: slide-mobile 5s 1 forwards;
     animation-delay: 4s;
@@ -592,8 +618,10 @@ details {
   .card > img {
     width: 100%;
   }
-  #tokenomics > h1 {
-    font-size: 100%;
+  #tokenomics > h1,
+  #utilities > h1 {
+    font-size: 300%;
+    margin-bottom: 0;
   }
   .joker_main {
     max-width: 100%;
