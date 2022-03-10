@@ -250,6 +250,12 @@ main {
   transition: 0.3s ease;
 }
 
+.btn.filled.mobile {
+  display: none;
+  max-width: 100px;
+  margin: auto;
+}
+
 .down {
   background-color: var(--primary);
   height: 50px;
@@ -577,7 +583,7 @@ h2 > span {
 
 @keyframes rise-fadein-mobile {
   0% {
-    top: -150%;
+    top: -20%;
     opacity: 0;
   }
   100% {
@@ -587,6 +593,12 @@ h2 > span {
 }
 
 @media screen and (max-width: 1000px) {
+  .btn.filled {
+    display: none;
+  }
+  .btn.filled.mobile {
+    display: block;
+  }
   #raffle {
     width: 100%;
   }
@@ -599,8 +611,15 @@ h2 > span {
     max-width: 600px;
     z-index: 3;
   }
+  .container {
+    animation: fadein 2s 1 forwards;
+  }
   .moon {
     animation: rise-fadein-mobile 2s 1 forwards;
+    animation-delay: 2s;
+  }
+  .castle {
+    display: none;
   }
   .nft {
     flex-direction: column;
