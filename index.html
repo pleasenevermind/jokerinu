@@ -18,18 +18,24 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="main_container">
       <div class="navbar">
         <div class="logo">
           <img src="./images/jkrslogo.png" alt="logo" />
         </div>
+        <i class="fa-solid fa-bars"></i>
         <ul class="navbar-list">
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Utilities</a></li>
           <li><a href="#">Tokenomics</a></li>
           <li><a href="#">How to buy</a></li>
@@ -42,7 +48,16 @@
       <main>
         <img class="castle" src="./images/castle.png" alt="castle" />
         <img class="moon" src="./images/moon.png" alt="moon" />
-        <img class="car" src="./images/car.png" alt="car" />
+        <!-- <img class="car" src="./images/car.png" alt="car" /> -->
+        <div id="car">
+          <lottie-player
+            src="./images/car.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
         <!-- <div class="car-container">
           <div class="car-body">
             <img src="./images/Scoobs.png" alt="car" />
@@ -52,7 +67,7 @@
         </div> -->
         <!-- <img class="joker_main" src="./images/jkrs.png" alt="main" /> -->
         <div class="heading">
-          <h1>JOKER <span style="color: rgb(105, 224, 105);">INU</span></h1>
+          <h1>JOKER <span style="color: rgb(105, 224, 105)">INU</span></h1>
           <!-- <p>
             A fun way to earn throught one of the best ecosystem in whole
             crypto-space.
@@ -71,7 +86,13 @@
           <div class="about_content">
             <h2>About US</h2>
             <p>
-              In a space full of meme projects, our project idea is simple and profitable for everyone, and fully decentralized. We chose the most meme and funny character out there The Joker, but with a twist to join the INU verse - We present to you, 'JOKER-INU'. The joker represents memes in every possible way, always with a smile on his face as he always likes to have the last laugh (why so serious).
+              In a space full of meme projects, our project idea is simple and
+              profitable for everyone, and fully decentralized. We chose the
+              most meme and funny character out there The Joker, but with a
+              twist to join the INU verse - We present to you, 'JOKER-INU'. The
+              joker represents memes in every possible way, always with a smile
+              on his face as he always likes to have the last laugh (why so
+              serious).
             </p>
           </div>
           <div class="about_image">
@@ -84,39 +105,88 @@
       <div id="utilities">
         <h1>Utilities</h1>
         <div class="utilities_container">
-          <div class="card float" style="background: #191919;">
-            <div class="content" style="text-align: center;">
+          <div class="card no-hover" style="background: goldenrod">
+            <div class="content black" style="text-align: center">
               <h2>Raffle</h2>
               <p>
-                Joker inu is featuring one of a kind Raffle System, happening every 4-7 days where we will have a reward pool of no more than 30% of the wallet and 1st, 2nd and 3rd postion winners will get 25%, 15% and 10% respectively.
+                Joker inu is featuring one of a kind Raffle System, happening
+                every 4-7 days where we will have a reward pool of no more than
+                30% of the wallet and 1st, 2nd and 3rd postion winners will get
+                25%, 15% and 10% respectively.
               </p>
               <img id="raffle" src="./images/raffle.gif" alt="joker" />
-              <div class="card no-hover" style="background: limegreen;">
-                <div class="content" style="text-align: center;">
+              <div class="card no-hover" style="background: limegreen">
+                <div class="content white" style="text-align: center">
                   <h2>Entry requirements</h2>
                   <p>
-                    Depending on how many tokens you buy you will go into 4 different ranks, each rank will determine how many eateries you qualify for;
+                    Depending on how many tokens you buy you will go into 4
+                    different ranks, each rank will determine how many eateries
+                    you qualify for;
                   </p>
                 </div>
               </div>
-              <div class="card" style="background: silver; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-                <div class="content" style="text-align: center; padding: 10px 20px;">
-                  <p style="color: #191919;">1 million to 10 million</p>
+              <div
+                class="card"
+                style="
+                  background: #3e0d6e;
+                  padding: 0;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                "
+              >
+                <div
+                  class="content white"
+                  style="text-align: center; padding: 10px 20px"
+                >
+                  <p>1 million to 10 million</p>
                 </div>
               </div>
-              <div class="card" style="background: #FFD700; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-                <div class="content" style="text-align: center; padding: 10px 20px;">
-                  <p style="color: #191919;">10 million to 50 million</p>
+              <div
+                class="card"
+                style="
+                  background: #3e0d6e;
+                  padding: 0;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                "
+              >
+                <div
+                  class="content white"
+                  style="text-align: center; padding: 10px 20px"
+                >
+                  <p>10 million to 50 million</p>
                 </div>
               </div>
-              <div class="card" style="background: #E5E4E2; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-                <div class="content" style="text-align: center; padding: 10px 20px;">
-                  <p style="color: #191919;">50 million to 200 million</p>
+              <div
+                class="card"
+                style="
+                  background: #3e0d6e;
+                  padding: 0;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                "
+              >
+                <div
+                  class="content white"
+                  style="text-align: center; padding: 10px 20px"
+                >
+                  <p>50 million to 200 million</p>
                 </div>
               </div>
-              <div class="card" style="background: #b9f2ff; padding: 0;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-                <div class="content" style="text-align: center; padding: 10px 20px;">
-                  <p style="color: #191919;">200 million+</p>
+              <div
+                class="card"
+                style="
+                  background: #3e0d6e;
+                  padding: 0;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                "
+              >
+                <div
+                  class="content white"
+                  style="text-align: center; padding: 10px 20px"
+                >
+                  <p>200 million+</p>
                 </div>
               </div>
             </div>
@@ -134,35 +204,24 @@
             <!-- <img src="./images/nfts.png" alt="joker" /> -->
           </div>
           <div class="nft">
-            <img src="./images/nft_1.PNG" alt="">
-            <img src="./images/nft_2.PNG" alt="">
-            <img src="./images/nft_3.PNG" alt="">
+            <img src="./images/nft_1.PNG" alt="" />
+            <img src="./images/nft_2.PNG" alt="" />
+            <img src="./images/nft_3.PNG" alt="" />
           </div>
-          <div class="card" style="background: #191919;">
+          <div class="card" style="background: #191919">
             <img src="./images/membership.PNG" width="100%" alt="joker" />
             <div class="content">
               <h2>NFT Club Membership</h2>
               <p>
                 Memberships NFTS will mean offered for community members that
-                  are willing to support this project all the way through and
-                  will have an exclusive set of benefits for holding NFT club
-                  membership.
+                are willing to support this project all the way through and will
+                have an exclusive set of benefits for holding NFT club
+                membership.
               </p>
             </div>
             <!-- <img src="./images/nfts.png" alt="joker" /> -->
           </div>
           <div class="card_hor">
-            <div class="card" style="background: #cc0000">
-              <!-- <img src="./images/jkrs.png" alt="joker" /> -->
-              <div class="content">
-                <h2>Redustrubtion</h2>
-                <p>
-                  Along with an income from our raffle, we also offer
-                  distribution, it’s safe to say no matter what the community is
-                  always winning.
-                </p>
-              </div>
-            </div>
             <div class="card" style="background: #cc0000">
               <!-- <img src="./images/jkrs.png" alt="joker" /> -->
               <div class="content">
@@ -193,32 +252,145 @@
         <h1>Tokenomics</h1>
         <div class="tokenomics_container">
           <div class="tokenomics_content">
-            <h2 style="opacity: 0.8;"><span>10%</span> Buy/Sell Tax</h2>
+            <h2 style="opacity: 0.8"><span>10%</span> Buy/Sell Tax</h2>
             <p>
-              <span>3%</span> reserved for Marketing to get the most exposure for reaching to
-              the most interested investors and building the community.
+              <span>3%</span> reserved for Marketing to get the most exposure
+              for reaching to the most interested investors and building the
+              community.
             </p>
             <p>
-              <span>2%</span> reserved for Raffle and will be used for our raffel dapp which
-              is will be fair for everyone without any intervention.
+              <span>2%</span> reserved for Raffle and will be used for our
+              raffel dapp which is will be fair for everyone without any
+              intervention.
             </p>
             <p>
-              <span>2%</span> reserved for Team salary which we are discloseing publicly and
-              team will have no tokens to ensure our investors that your
-              investment is safe.
+              <span>2%</span> reserved for Team salary which we are discloseing
+              publicly and team will have no tokens to ensure our investors that
+              your investment is safe.
             </p>
             <p>
-              <span>3%</span> reserved for Liquidity Pool which will automatically go into
-              building up a strong and healthy liquidity.
+              <span>3%</span> reserved for Liquidity Pool which will
+              automatically go into building up a strong and healthy liquidity.
             </p>
           </div>
           <canvas id="tax"></canvas>
         </div>
       </div>
     </section>
+    <section class="roadmap_section">
+      <div id="roadmap">
+        <h1>Roadmap</h1>
+        <div class="phase">
+          <div class="phase_content" style="border-left: 2px solid #ab5dee">
+            <h2>Stage 1</h2>
+            <ul>
+              <li>Social Media Presence</li>
+              <li>Website Deployment</li>
+              <li>Draft Whitepaper</li>
+              <li>Contract Audit</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase reverse">
+          <div class="phase_content left">
+            <h2>Stage 2</h2>
+            <ul>
+              <li>Coin Gecko listing</li>
+              <li>CoinMarketCap listing</li>
+              <li>Whitepaper release</li>
+              <li>Contract Audi</li>
+              <li>Launch</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase">
+          <div class="phase_content" style="border-left: 2px solid #ab5dee">
+            <h2>Stage 3</h2>
+            <ul>
+              <li>JokerSwap</li>
+              <li>JokerDash</li>
+              <li>JOKER-INU Merch</li>
+              <li>NFTs release</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+
+        <div class="phase reverse">
+          <div class="phase_content left bottom">
+            <h2>Stage 4</h2>
+            <ul>
+              <li>Small CEXs listing</li>
+              <li>Game Release</li>
+              <li>Launchpad/Incubator</li>
+              <li>BSC bridge</li>
+            </ul>
+          </div>
+          <div class="blank"></div>
+        </div>
+      </div>
+    </section>
+    <section id="faq_section">
+      <h1>FAQs</h1>
+      <div class="content_faq">
+        <div>
+          <input type="checkbox" id="question1" name="q" class="questions" />
+          <div class="plus">+</div>
+          <label for="question1" class="question">
+            What is the Contract Address?
+          </label>
+          <div class="answers">
+            The Contract Address will be updated here as soon as it is out.
+          </div>
+        </div>
+
+        <div>
+          <input type="checkbox" id="question2" name="q" class="questions" />
+          <div class="plus">+</div>
+          <label for="question2" class="question">
+            What is the Total Supply?
+          </label>
+          <div class="answers">It is yet to be announced!</div>
+        </div>
+
+        <div>
+          <input type="checkbox" id="question3" name="q" class="questions" />
+          <div class="plus">+</div>
+          <label for="question3" class="question">
+            How long is the liquidity locked for?
+          </label>
+          <div class="answers">Initially it is for 3 months.</div>
+        </div>
+
+        <div>
+          <input type="checkbox" id="question4" name="q" class="questions" />
+          <div class="plus">+</div>
+          <label for="question4" class="question"> How to buy? </label>
+          <div class="answers">Initially it is for 3 months.</div>
+        </div>
+      </div>
+    </section>
     <section class="team_section">
       <div id="team">
-        <h1>Joker Gang</h1>
+        <h1>Team</h1>
+        <div>
+          <p>
+            A team of professionals and talented individuals working together as
+            a dynamic group to ensure our investors are in safe hands, always
+            going above and beyond for the community.
+          </p>
+          <p>
+            we have been working on this project months in advance so that we
+            are able to provide to you the community memebers with actual
+            results and so that we are able to roll out our utilities
+            accordingly. JokerInu is built for different purposes and a variety
+            of unique utilities to build a strong and active community.
+          </p>
+        </div>
         <div class="all_team">
           <div>
             <img
@@ -247,107 +419,9 @@
             />
             <p>Bane</p>
           </div>
-          <div>
-            <img
-              class="font-effect-fire"
-              src="./images/jkrs.png"
-              width="100"
-              alt="logo"
-            />
-            <p>Joker Accountant</p>
-          </div>
-          <div>
-            <img
-              class="font-effect-fire"
-              src="./images/jkrs.png"
-              width="100"
-              alt="logo"
-            />
-            <p>Riddler</p>
-          </div>
         </div>
-      </div>
-    </div>
-    </section>
-    <section class="faq_section">
-      <div class="faq">
-        <h2>FAQs</h2>
-        <details>
-          <summary>What is lorem?</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio accusantium, blanditiis nisi neque voluptatum maxime, quos repellendus vero sit exercitationem consequuntur nesciunt! Laborum repellendus delectus porro mollitia, aperiam provident ratione.
-          </p>
-        </details>
-        <details>
-          <summary>What is lorem?</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio accusantium, blanditiis nisi neque voluptatum maxime, quos repellendus vero sit exercitationem consequuntur nesciunt! Laborum repellendus delectus porro mollitia, aperiam provident ratione.
-          </p>
-        </details>
-        <details>
-          <summary>What is lorem?</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio accusantium, blanditiis nisi neque voluptatum maxime, quos repellendus vero sit exercitationem consequuntur nesciunt! Laborum repellendus delectus porro mollitia, aperiam provident ratione.
-          </p>
-        </details>
       </div>
     </section>
-    <!-- <div id="roadmap">
-      <h1>Roadmap</h1>
-      <div class="phase">
-        <div class="phase_content" style="border-left: 2px solid #ab5dee">
-          <h2>Stage 1</h2>
-          <ul>
-            <li>Social Media Presence</li>
-            <li>Website Deployment</li>
-            <li>Draft Whitepaper</li>
-            <li>Contract Audit</li>
-          </ul>
-        </div>
-        <div class="blank"></div>
-      </div>
-
-      <div class="phase reverse">
-        <div class="phase_content left">
-          <h2>Stage 2</h2>
-          <ul>
-            <li>Coin Gecko listing</li>
-            <li>CoinMarketCap listing</li>
-            <li>Whitepaper release</li>
-            <li>Contract Audi</li>
-            <li>Launch</li>
-          </ul>
-        </div>
-        <div class="blank"></div>
-      </div>
-
-      <div class="phase">
-        <div class="phase_content" style="border-left: 2px solid #ab5dee">
-          <h2>Stage 3</h2>
-          <ul>
-            <li>JokerSwap</li>
-            <li>JokerDash</li>
-            <li>JOKER-INU Merch</li>
-            <li>NFTs release</li>
-          </ul>
-        </div>
-        <div class="blank"></div>
-      </div>
-
-      <div class="phase reverse">
-        <div class="phase_content left bottom">
-          <h2>Stage 4</h2>
-          <ul>
-            <li>Small CEXs listing</li>
-            <li>Game Release</li>
-            <li>Launchpad/Incubator</li>
-            <li>BSC bridge</li>
-          </ul>
-        </div>
-        <div class="blank"></div>
-      </div>
-    </div> -->
-    
     <div class="footer">
       <div class="copyright">
         <!-- <div class="logo"></div> -->
@@ -362,7 +436,7 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -397,19 +471,19 @@
         },
       });
 
-      var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
+      var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>

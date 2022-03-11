@@ -38,7 +38,7 @@ ul {
   margin: 0;
 }
 
-.container {
+.main_container {
   padding: 1% 10%;
   max-width: 1200px;
   margin: auto;
@@ -64,6 +64,12 @@ ul {
 .navbar-list > li > a:hover {
   color: var(--green);
   transition: 0.3s ease;
+}
+
+.fa-bars {
+  font-size: 32px;
+  color: var(--green);
+  display: none;
 }
 
 .logo {
@@ -121,7 +127,8 @@ main {
     right: -50%;
   }
   100% {
-    right: 30%;
+    right: 50%;
+    transform: translate(50%, 0%);
   }
 }
 
@@ -145,8 +152,8 @@ main {
   animation-delay: 1s;
 }
 
-.car {
-  width: 40%;
+#car {
+  width: 700px;
   position: absolute;
   bottom: 0;
   right: -50%;
@@ -282,12 +289,15 @@ main {
 #about > h1,
 #roadmap > h1,
 #tokenomics > h1,
-#utilities > h1 {
+#utilities > h1,
+#faq_section > h1,
+#team > h1 {
   color: var(--light);
   font-size: 500%;
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 5px;
   color: var(--green);
+  text-align: center;
 }
 
 .about_section {
@@ -307,10 +317,6 @@ main {
   border-radius: 10px;
   background: var(--primary);
   box-shadow: var(--red) 0px 1px 29px 0px;
-}
-
-#about {
-  position: relative;
 }
 
 .about_content > h2 {
@@ -366,7 +372,7 @@ main {
 }
 
 .utilities_section,
-.faq_section {
+.roadmap_section {
   background-color: var(--primary);
   padding: 1% 10%;
   max-width: 1200px;
@@ -572,12 +578,91 @@ h2 > span {
   color: var(--green);
 }
 
+.black {
+  color: #191919;
+}
+.white {
+  color: #fff;
+}
+
+#faq_section {
+  padding: 5% 10% 15%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.content_faq {
+  border-radius: 4px;
+}
+
+/*Question*/
+.question {
+  position: relative;
+  background: #270847;
+  border-radius: 10px;
+  margin: 0;
+  padding: 15px 10px 15px 50px;
+  display: block;
+  cursor: pointer;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.questions:checked ~ .answers {
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+
 @keyframes slide-mobile {
   0% {
-    right: -100%;
+    transform: translate(150%, 0%);
   }
   100% {
-    right: 5%;
+    /* right: 50%; */
+    transform: translate(50%, 0%);
   }
 }
 
@@ -592,6 +677,10 @@ h2 > span {
   }
 }
 
+.fa-solid.fa-bars {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .btn.filled {
     display: none;
@@ -602,16 +691,15 @@ h2 > span {
   #raffle {
     width: 100%;
   }
-  .car {
-    animation: slide-mobile 5s 1 forwards;
-    animation-delay: 4s;
-    right: -100%;
+  #car {
+    animation: slide 5s 1 forwards;
+    animation-delay: 2s;
+    transform: translate(150%, 0%);
     bottom: 9%;
-    width: 95%;
-    max-width: 600px;
+    width: 500px;
     z-index: 3;
   }
-  .container {
+  .main_container {
     animation: fadein 2s 1 forwards;
   }
   .moon {
@@ -638,9 +726,13 @@ h2 > span {
     width: 100%;
   }
   #tokenomics > h1,
-  #utilities > h1 {
+  #utilities > h1,
+  #roadmap > h1,
+  #team > h1 {
     font-size: 300%;
-    margin-bottom: 0;
+  }
+  #faq_section > h1 {
+    font-size: 300%;
   }
   .joker_main {
     max-width: 100%;
@@ -664,7 +756,7 @@ h2 > span {
   .tokenomics_content > h2 {
     text-align: center;
   }
-  .container {
+  .main_container {
     padding: 5% 10%;
     background: url(./images/castle.png);
     background-size: cover;
@@ -715,5 +807,8 @@ h2 > span {
   }
   .social_list {
     margin: 5% 0;
+  }
+  .fa-solid.fa-bars {
+    display: block;
   }
 }
