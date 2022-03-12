@@ -499,32 +499,40 @@ details {
 }
 
 #roadmap {
-  padding: 0 15%;
+  padding: 0 12%;
+}
+
+#roadmap > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .phase {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.reverse {
-  flex-direction: row;
+  margin-bottom: 5%;
 }
 
 .phase_content {
-  border-top: 2px solid var(--primary);
-  text-align: right;
-  width: 100%;
-}
-
-.left {
   text-align: left;
-  border-right: 2px solid var(--primary);
-  border-top: 2px solid var(--primary);
+  padding: 10% 30px;
+  border-radius: 4px;
+  width: 320px;
+  height: 410px;
+  line-height: 30px;
 }
 
 .blank {
   width: 100%;
+}
+
+li > i {
+  margin-right: 10px;
+}
+
+.undone {
+  color: #e5ff00;
+  opacity: 0.2;
 }
 
 .footer {
@@ -749,6 +757,16 @@ h2 > span {
   #roadmap {
     padding: 0;
   }
+  .phase_content {
+    width: 250px;
+    height: 520px;
+  }
+  .phase_fit {
+    height: 290px;
+  }
+  .coming_soon {
+    height: 120px;
+  }
   main {
     flex-direction: column-reverse;
   }
@@ -793,9 +811,6 @@ h2 > span {
   .tokenomics_container {
     flex-direction: column;
   }
-  .phase_content {
-    padding: 0 0 10%;
-  }
   .bottom {
     border-bottom: 2px solid var(--primary);
   }
@@ -803,6 +818,7 @@ h2 > span {
     display: none;
   }
   .footer {
+    padding: 10% 0 0;
     flex-direction: column-reverse;
   }
   .social_list {
