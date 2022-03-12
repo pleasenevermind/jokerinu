@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="Joker Inu | ERC-20" />
+    <meta name="description" content="Joker Inu, " />
+    <meta name="keywords" content="joker inu, jokerinu, joker token" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+
+    <meta property="og:title" content="Joker Inu | ERC-20" />
+    <meta property="og:site_name" content="Joker Inu" />
+    <meta property="og:url" content="https://jokerinu.io" />
+    <meta property="og:description" content="Joker Inu, " />
+    <meta property="og:type" content="website" />
+
+    <title>Joker Inu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./images/favicon.ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./images/favicon.ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/favicon.ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/favicon.ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/favicon.ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon.ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/favicon.ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/favicon.ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon.ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/favicon.ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon.ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./images/favicon.ico/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script
+      src="https://kit.fontawesome.com/0adb577dfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+      body {
+        background: #360b61;
+      }
+      .raffle_container {
+        padding: 15px 5%;
+      }
+      .filled {
+        background: limegreen;
+        border: 1px solid limegreen;
+      }
+      .main {
+        max-width: 600px;
+        margin: auto;
+      }
+      .main_heading {
+        font-size: 300%;
+        text-align: center;
+        color: limegreen;
+        font-family: "Shadows Into Light", cursive;
+      }
+      .raffle_card {
+        background: goldenrod;
+        border-radius: 10px;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .raffle_card > input {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px 15px;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+      }
+      .raffle_card > label {
+        font-size: larg;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+      }
+      .claim {
+        padding: 12px 75px;
+        margin-top: 10px;
+        font-weight: 500;
+        background: #fff;
+        color: goldenrod;
+        transition: 0.3s ease;
+      }
+      .claim:hover {
+        background: #360b61;
+        color: #fff;
+        border: 1px solid goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="raffle_container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./images/jkrslogo.png" alt="logo" />
+        </div>
+        <a href="#" class="btn filled" style="display: block">
+          <i class="fal fa-wallet"></i>
+        </a>
+      </div>
+      <div class="main">
+        <h1 class="main_heading">Joker Raffle</h1>
+        <div class="raffle_card">
+          <label for="token">Your Rank</label>
+          <input id="token" type="number" disabled value="0.00" />
+          <label for="ticket">Tickets Available</label>
+          <input id="ticket" type="number" disabled value="0.00" />
+          <label for="ticket">Money Won</label>
+          <input id="ticket" type="number" disabled value="0.00" />
+          <a href="#" class="btn claim">Claim</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+        <p>&copy; Joker-Inu 2022. All rights reserved.</p>
+      </div>
+      <div class="social">
+        <ul class="social_list">
+          <li>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+          </li>
+          <li class="middle_social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <script src="animations.js"></script> -->
+  </body>
+</html>

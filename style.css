@@ -51,6 +51,7 @@ ul {
   max-width: 1200px;
   margin: auto;
   height: 100vh;
+  max-height: 1080px;
   position: relative;
   overflow: hidden;
 }
