@@ -38,6 +38,14 @@ ul {
   margin: 0;
 }
 
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 .main_container {
   padding: 1% 10%;
   max-width: 1200px;
