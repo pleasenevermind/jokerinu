@@ -130,6 +130,7 @@ main {
     opacity: 1;
   }
 }
+
 @keyframes slide {
   0% {
     right: -50%;
@@ -167,29 +168,6 @@ main {
   right: -50%;
   animation: slide 5s 1 forwards;
   animation-delay: 4s;
-}
-
-.car-container {
-  max-width: 600px;
-  margin: 5% auto 0;
-}
-
-.car-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-.car-body > img {
-  max-width: 100%;
-  animation: move 1s infinite ease;
-}
-
-.car-wheel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 @keyframes spin {
@@ -393,7 +371,7 @@ main {
 
 .nft {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -412,6 +390,18 @@ main {
   width: 70%;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -422,6 +412,10 @@ main {
   transition: 0.3s ease;
   margin: 5% 0;
   max-width: 790px;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .card:hover {
@@ -438,36 +432,6 @@ main {
   width: 150%;
   margin: auto;
   overflow-x: hidden;
-}
-
-.card_hor {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.card_hor > div {
-  /* max-height: 450px; */
-  flex-direction: column;
-}
-
-.card_hor > div > img {
-  max-width: 300px;
-}
-
-.card_hor > div > div {
-  max-width: 300px;
-  text-align: center;
-}
-
-.float {
-  box-shadow: goldenrod 0px 10px 29px 0px;
-}
-
-.float:hover {
-  box-shadow: goldenrod 0px 10px 29px 0px;
 }
 
 .no-hover:hover {
@@ -698,6 +662,14 @@ h2 > span {
 }
 
 @media screen and (max-width: 1000px) {
+  .main_container {
+    height: 90vh;
+  }
+  .logo,
+  .logo > img {
+    width: 60px;
+    height: 60px;
+  }
   .btn.filled {
     display: none;
   }
@@ -744,8 +716,12 @@ h2 > span {
   #tokenomics > h1,
   #utilities > h1,
   #roadmap > h1,
-  #team > h1 {
+  #team > h1,
+  .about_content > h2 {
     font-size: 300%;
+  }
+  .about_content > h2 {
+    padding-top: 20px;
   }
   #faq_section > h1 {
     font-size: 300%;
