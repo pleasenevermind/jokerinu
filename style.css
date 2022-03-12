@@ -410,7 +410,7 @@ main {
   background-color: var(--red);
   border-radius: 4px;
   transition: 0.3s ease;
-  margin: 5% 0;
+  margin: 5% 0 0;
   max-width: 790px;
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
