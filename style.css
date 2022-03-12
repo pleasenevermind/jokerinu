@@ -40,6 +40,7 @@ ul {
 
 .preload * {
   transition: none !important;
+  visibility: hidden;
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
