@@ -85,7 +85,7 @@ ul {
   height: 80px;
 }
 
-.logo > img {
+.logo > a > img {
   width: 80px;
 }
 
@@ -667,7 +667,7 @@ h2 > span {
     height: 90vh;
   }
   .logo,
-  .logo > img {
+  .logo > a > img {
     width: 60px;
     height: 60px;
   }
