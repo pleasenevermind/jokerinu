@@ -181,6 +181,20 @@
         justify-content: center;
         align-items: center;
       }
+      .count_down > p {
+        padding: 0;
+        margin: 0;
+      }
+      .disclaimer {
+        margin: 2%;
+      }
+      .disclaimer > h2 {
+        font-size: 12px;
+      }
+      .disclaimer > p {
+        font-size: 8px;
+        text-align: justify;
+      }
     </style>
   </head>
   <body>
@@ -205,7 +219,10 @@
           <input id="ticket" type="number" disabled value="0.00" />
           <label for="ticket">Money Won</label>
           <input id="ticket" type="number" disabled value="0.00" />
-          <a href="#" class="btn claim">Claim</a>
+          <!-- <a href="#" class="btn claim">Claim</a> -->
+          <div class="count_down">
+            <p>Next raffle in <strong>00:00:00</strong></p>
+          </div>
         </div>
       </div>
       <section id="how_to">
@@ -227,7 +244,7 @@
           </p>
         </div>
         <div class="card_hor">
-          <div class="raffle_card">
+          <div class="raffle_card" style="background: limegreen">
             <h2>NFT</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
@@ -245,6 +262,18 @@
               officia deleniti aut!
             </p>
           </div>
+        </div>
+        <div class="disclaimer">
+          <h2>Disclaimer</h2>
+          <p>
+            There is no loss mechanism you always keep whatever you have. You
+            would only lose the number of entries by selling your tokens or your
+            NFT. The dapp will make you sign in with your wallet and show you
+            your rank and the number of entries you currently have. It will also
+            be cool if the Dapp would showcase the name of the NFT you’re
+            holding instead of just your wallet address. The Dapp will also
+            showcase the amount in $ that is currently in the prize pool.
+          </p>
         </div>
       </section>
       <!-- <div id="scroll">
@@ -269,6 +298,44 @@
         </ul>
       </div>
     </div>
+
+    <script>
+      // (function () {
+      //   const second = 1000,
+      //     minute = second * 60,
+      //     hour = minute * 60,
+      //     day = hour * 24;
+
+      //   // milliseconds since Jan 1, 1970, 00:00:00.000 GMT
+      //   const countDown = new Date(Date.UTC(2022, 02, 05, 21, 0, 0)).getTime();
+      //   const x = setInterval(function () {
+      //     const now = new Date().getTime();
+      //     const distance = countDown - now;
+
+      //     document.getElementById("days").innerText = Math.floor(
+      //       distance / day
+      //     );
+      //     document.getElementById("hours").innerText = Math.floor(
+      //       (distance % day) / hour
+      //     );
+      //     document.getElementById("minutes").innerText = Math.floor(
+      //       (distance % hour) / minute
+      //     );
+      //     document.getElementById("seconds").innerText = Math.floor(
+      //       (distance % minute) / second
+      //     );
+
+      //     //Show live when countdown finish
+      //     if (distance < 0) {
+      //       document.getElementById("headline").innerText = "We are live!";
+      //       document.getElementById("countdown").style.display = "none";
+      //       document.getElementById("content").style.display = "block";
+      //       clearInterval(x);
+      //     }
+      //     //seconds
+      //   }, 0);
+      // })();
+    </script>
     <!-- <script src="animations.js"></script> -->
   </body>
 </html>
