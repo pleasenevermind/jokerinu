@@ -32,7 +32,7 @@ $(document).ready(function () {
 	sr.reveal('.raffle', { delay: 200 });
 
 	sr = ScrollReveal({
-		origin: 'right',
+		origin: 'left',
 		distance: '80px',
 		duration: 2000,
 		reset
@@ -45,7 +45,7 @@ $(document).ready(function () {
 	sr.reveal('.raffle_card', { delay: 200 });
 
 	sr = ScrollReveal({
-		origin: 'left',
+		origin: 'bottom',
 		distance: '80px',
 		duration: 2000,
 		reset
@@ -55,13 +55,6 @@ $(document).ready(function () {
 
 	sr.reveal('#how_work > h1', {});
 	sr.reveal('#how_work > p', { delay: 200 });
-
-	sr = ScrollReveal({
-		origin: 'right',
-		distance: '80px',
-		duration: 2000,
-		reset
-	});
 
 	sr.reveal('.content_faq > div', { delay: 200 });
 
