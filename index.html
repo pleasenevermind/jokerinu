@@ -111,6 +111,20 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body class="preload">
+    <div id="mobile_nav" class="nav_mobile">
+      <i
+        class="fas fa-times"
+        onclick="document.getElementById('mobile_nav').style.display = 'none';"
+      ></i>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#utilities">Utilities</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
     <div class="main_container">
       <div class="navbar">
         <div class="logo">
@@ -118,7 +132,10 @@
             <img src="./images/jkrslogo.png" alt="logo" />
           </a>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <i
+          class="fa-solid fa-bars"
+          onclick="document.getElementById('mobile_nav').style.display = 'block'"
+        ></i>
         <ul class="navbar-list">
           <li><a href="#about">About</a></li>
           <li><a href="#utilities">Utilities</a></li>
