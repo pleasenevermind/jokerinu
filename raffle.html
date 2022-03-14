@@ -200,9 +200,13 @@
       .timer_container {
         border-radius: 4px;
         padding: 10px 20px;
+        max-width: 600px;
         color: #fff;
-        margin: 0;
+        background: #6216af;
+        margin: 0 auto;
         text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
 
       .timer_container > h1 {
@@ -226,6 +230,8 @@
       #countdown > ul > li span {
         display: block;
         font-size: 4.5rem;
+        font-weight: 900;
+        letter-spacing: 1px;
       }
 
       .emoji {
@@ -426,7 +432,7 @@
           text-align: center;
         }
         .timer_container {
-          padding: 0;
+          padding: 5%;
         }
         .timer_container > h1 {
           font-size: 24px;
@@ -461,7 +467,7 @@
             <!-- <h1 id="headline" style="text-align: center">COMING SOON</h1> -->
             <h2>NEXT RAFFLE</h2>
             <div id="countdown">
-              <ul style="padding-left: 0">
+              <ul>
                 <li><span id="days"></span>days</li>
                 <li><span id="hours"></span>Hours</li>
                 <li><span id="minutes"></span>Minutes</li>
@@ -556,7 +562,7 @@
           </p>
         </div>
       </div>
-      <div class="raffle_card" style="background: #191919">
+      <!-- <div class="raffle_card" style="background: #191919">
         <div class="disclaimer">
           <h2>Disclaimer</h2>
           <p>
@@ -569,7 +575,7 @@
             showcase the amount in $ that is currently in the prize pool.
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
     <div class="footer">
       <div class="copyright">
