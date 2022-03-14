@@ -15,7 +15,6 @@ $(document).ready(function () {
 
 	sr.reveal('.main > h1', {});
 	sr.reveal('.timer_container', { delay: 200 });
-	sr.reveal('.timer_container > h2', { delay: 200 });
 
 	sr = ScrollReveal({
 		origin: 'left',

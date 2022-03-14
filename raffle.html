@@ -487,7 +487,7 @@
         >
           <div class="prize_pool">
             <h1 class="main_heading">Prize Pool</h1>
-            <p>$3000</p>
+            <p id="prize_money">$3000</p>
             <strong>Top three winners</strong>
             <div class="ticket_container">
               <div id="raffle-red" class="entry raffle">
@@ -525,7 +525,7 @@
         <i class="fa fa-angle-up" style="font-size: 30px"></i>
       </div> -->
     <section id="how_to">
-      <h1 class="main_heading">How to participate?</h1>
+      <h1 class="main_heading" style="margin-top: 0">How to participate?</h1>
       <div
         class="raffle_card"
         style="
@@ -632,6 +632,11 @@
           }
           //seconds
         }, 0);
+
+        const y = setInterval(function () {
+          document.getElementById("prize_money").innerText =
+            "$" + Math.floor(Math.random() * 500000) + 1;
+        }, 1000 * 5);
       })();
     </script>
     <script src="animations.js"></script>
