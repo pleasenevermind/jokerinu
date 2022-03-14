@@ -322,7 +322,6 @@ main {
   max-width: 550px;
   font-size: larger;
   border-radius: 10px;
-  padding: 5px 10px 20px;
   margin: auto;
   text-align: center;
   color: var(--light);
@@ -641,6 +640,10 @@ h2 > span {
   display: none;
 }
 
+.desk_display {
+  display: block;
+}
+
 @keyframes slide-mobile {
   0% {
     transform: translate(150%, 0%);
@@ -763,6 +766,9 @@ h2 > span {
   .tokenomics_content > h2 {
     text-align: center;
   }
+  .about_content {
+    padding: 5% 10%;
+  }
   .main_container {
     padding: 5% 10%;
     background: url(./images/castle.png);
@@ -821,13 +827,13 @@ h2 > span {
   .nav_mobile {
     position: fixed;
     display: none;
-    background: var(--green);
+    background: #11031f;
     width: 100%;
     height: 100vh;
     z-index: 5;
   }
   .nav_mobile > ul {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
