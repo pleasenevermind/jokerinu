@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	const reset = true;
+	const reset = false;
 	let sr = ScrollReveal({
 		origin: 'top',
 		distance: '80px',
@@ -10,19 +10,12 @@ $(document).ready(function () {
 	sr.reveal('.about_container', {});
 	sr.reveal('.about_content > h2', { delay: 200 });
 	sr.reveal('.about_content > p', { delay: 200 });
+	sr.reveal('.about_content > a', { delay: 200 });
 	sr.reveal('.about_image', { delay: 200 });
 
-	sr = ScrollReveal({
-		origin: 'left',
-		distance: '80px',
-		duration: 2000,
-		reset
-	});
-
-	sr.reveal('#token', {});
-	sr.reveal('.chart', { delay: 200 });
-
-	sr.reveal('.timer_container', {});
+	sr.reveal('.main > h1', {});
+	sr.reveal('.timer_container', { delay: 200 });
+	sr.reveal('.timer_container > h2', { delay: 200 });
 
 	sr = ScrollReveal({
 		origin: 'left',
@@ -31,14 +24,47 @@ $(document).ready(function () {
 		reset
 	});
 
-	sr.reveal('#roadmap', {});
-	sr.reveal('.phase', { delay: 200 });
+	sr.reveal('#utilities', {});
+	sr.reveal('.card', { delay: 200 });
+	sr.reveal('.nft > img', { delay: 200 });
 
-	sr.reveal('#team', {});
-	sr.reveal('.all_team > div', { delay: 200 });
+	sr.reveal('.prize_pool', {});
+	sr.reveal('.raffle', { delay: 200 });
 
-	sr.reveal('.footer-right', {});
-	sr.reveal('.footer-middle', { delay: 200 });
-	sr.reveal('.footer-left', { delay: 200 });
+	sr = ScrollReveal({
+		origin: 'right',
+		distance: '80px',
+		duration: 2000,
+		reset
+	});
 
+	sr.reveal('#tax', {});
+	sr.reveal('.tokenomics_content', {});
+
+	sr.reveal('#how_to > h1', {});
+	sr.reveal('.raffle_card', { delay: 200 });
+
+	sr = ScrollReveal({
+		origin: 'left',
+		distance: '80px',
+		duration: 2000,
+		reset
+	});
+
+	sr.reveal('.phase', {});
+
+	sr.reveal('#how_work > h1', {});
+	sr.reveal('#how_work > p', { delay: 200 });
+
+	sr = ScrollReveal({
+		origin: 'right',
+		distance: '80px',
+		duration: 2000,
+		reset
+	});
+
+	sr.reveal('.content_faq > div', { delay: 200 });
+
+	sr.reveal('#team > div > p', {});
+	sr.reveal('.all_team', { delay: 200 });
 });
