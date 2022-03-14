@@ -163,7 +163,7 @@ main {
 }
 
 #car {
-  width: 700px;
+  width: 500px;
   position: absolute;
   bottom: 0;
   right: -50%;
@@ -685,7 +685,7 @@ h2 > span {
     animation-delay: 2s;
     transform: translate(150%, 0%);
     bottom: 9%;
-    width: 500px;
+    width: 350px;
     z-index: 3;
   }
   .main_container {

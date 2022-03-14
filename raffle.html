@@ -108,7 +108,9 @@
       body {
         background: #360b61;
       }
-      .raffle_container {
+      .raffle_container,
+      #how_to,
+      #how_work {
         padding: 15px 5%;
       }
       .filled {
@@ -117,6 +119,7 @@
       }
       .main {
         margin: auto;
+        padding: 2%;
       }
       .main_heading {
         font-size: 300%;
@@ -125,7 +128,7 @@
         font-family: "Shadows Into Light", cursive;
       }
       .raffle_card {
-        margin: 2%;
+        margin: 10px;
         background: goldenrod;
         border-radius: 10px;
         padding: 50px;
@@ -192,11 +195,11 @@
       }
       .disclaimer > p {
         /* font-size: 8px; */
-        text-align: justify;
+        /* text-align: justify; */
       }
       .timer_container {
         border-radius: 4px;
-        padding: 10px 20px 50px;
+        padding: 10px 20px;
         color: #fff;
         margin: 0;
         text-align: center;
@@ -399,13 +402,41 @@
         position: absolute;
       }
 
+      #how_to,
+      #how_work {
+        background: var(--primary2);
+      }
+
+      @media screen and (min-width: 1000px) {
+        #how_to,
+        #how_work {
+          padding: 2% 15%;
+        }
+      }
+
       @media screen and (max-width: 1000px) {
+        .raffle_card {
+          text-align: center;
+        }
         .ticket_container {
           flex-direction: column;
           text-align: center;
         }
         .ticket_container > p {
           text-align: center;
+        }
+        .timer_container {
+          padding: 0;
+        }
+        .timer_container > h1 {
+          font-size: 24px;
+        }
+        #countdown > ul > li {
+          font-size: 14px;
+        }
+
+        #countdown > ul > li > span {
+          font-size: 24px;
         }
       }
     </style>
@@ -423,81 +454,91 @@
           Connect
         </a>
       </div>
-      <div class="carsd_hor" style="max-width: 1000px; margin: 20px auto">
-        <div
-          class="prize_pool"
-          style="max-width: 800px; margin: auto; padding: 5% 0"
-        >
-          <h1 class="main_heading">Prize Pool</h1>
-          <p><strong>$3000</strong></p>
-          <div class="ticket_container">
-            <div id="raffle-red" class="entry raffle">
-              <div class="no-scale"></div>
-            </div>
-            <div id="raffle-red" class="entry raffle">
-              <div class="no-scale"></div>
-            </div>
-            <div id="raffle-red" class="entry raffle">
-              <div class="no-scale"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="main">
         <h1 class="main_heading">Joker Raffle</h1>
-        <h1 id="headline" style="text-align: center">COMING SOON</h1>
-        <div class="card_hor">
-          <div class="" style="text-align: center">
-            <div class="timer_container">
-              <p>
-                <h2>NEXT RAFFLE</h2>
-              </p>
-              <div id="countdown">
-                <ul style="padding-left: 0">
-                  <li><span id="days"></span>days</li>
-                  <li><span id="hours"></span>Hours</li>
-                  <li><span id="minutes"></span>Minutes</li>
-                  <li><span id="seconds"></span>Seconds</li>
-                </ul>
+        <div class="" style="text-align: center">
+          <div class="timer_container">
+            <!-- <h1 id="headline" style="text-align: center">COMING SOON</h1> -->
+            <h2>NEXT RAFFLE</h2>
+            <div id="countdown">
+              <ul style="padding-left: 0">
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+              </ul>
+            </div>
+            <div id="content" class="emoji">
+              <!-- <span>&#x1F34C;</span>
+            <span>&#x1F34C;</span>
+            <span>&#x1F34C;</span> -->
+            </div>
+          </div>
+        </div>
+        <div
+          class="carsd_hor"
+          style="max-width: 1000px; margin: 20px auto; padding: 5% 0"
+        >
+          <div class="prize_pool">
+            <h1 class="main_heading">Prize Pool</h1>
+            <p><strong>$3000</strong></p>
+            <strong>Top three winners</strong>
+            <div class="ticket_container">
+              <div id="raffle-red" class="entry raffle">
+                <div class="no-scale"></div>
               </div>
-              <div id="content" class="emoji">
-                <!-- <span>&#x1F34C;</span>
-              <span>&#x1F34C;</span>
-              <span>&#x1F34C;</span> -->
+              <div id="raffle-red" class="entry raffle">
+                <div class="no-scale"></div>
+              </div>
+              <div id="raffle-red" class="entry raffle">
+                <div class="no-scale"></div>
               </div>
             </div>
           </div>
-          <div class="raffle_card" style="max-width: 600px">
-            <label for="token">Your Rank</label>
-            <input id="token" type="number" disabled value="0.00" />
-            <label for="ticket">Tickets Available</label>
-            <input id="ticket" type="number" disabled value="0.00" />
-            <label for="ticket">Money Won</label>
-            <input id="ticket" type="number" disabled value="0.00" />
-            <!-- <a href="#" class="btn claim">Claim</a> -->
-          </div>
+        </div>
+        <div class="raffle_card" style="max-width: 600px; margin: auto">
+          <label for="token">Your Rank</label>
+          <input id="token" type="number" disabled value="0.00" />
+          <label for="ticket">Tickets Available</label>
+          <input id="ticket" type="number" disabled value="0.00" />
+          <label for="ticket">Money Won</label>
+          <input id="ticket" type="number" disabled value="0.00" />
+          <!-- <a href="#" class="btn claim">Claim</a> -->
         </div>
       </div>
-      <section id="how_work">
-        <h1 class="main_heading">How it works?</h1>
+    </div>
+    <section id="how_work">
+      <h1 class="main_heading">How it works?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero
+        magni sequi ex quidem deleniti in, similique odit neque excepturi quasi
+        doloremque. Sit distinctio nam debitis cupiditate officia deleniti aut!
+      </p>
+    </section>
+    <!-- <div id="scroll">
+        <i class="fa fa-angle-up" style="font-size: 30px"></i>
+      </div> -->
+    <section id="how_to">
+      <h1 class="main_heading">How to participate?</h1>
+      <div
+        class="raffle_card"
+        style="
+          background: linear-gradient(-45deg, goldenrod, #cc0000);
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+        "
+      >
+        <h2>Tokens</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero
           magni sequi ex quidem deleniti in, similique odit neque excepturi
           quasi doloremque. Sit distinctio nam debitis cupiditate officia
           deleniti aut!
         </p>
-      </section>
-      <section id="how_to">
-        <h1 class="main_heading">How to participate?</h1>
-        <div
-          class="raffle_card"
-          style="
-            background: linear-gradient(-45deg, goldenrod, #cc0000);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-          "
-        >
-          <h2>Tokens</h2>
+      </div>
+      <div class="card_hor">
+        <div class="raffle_card" style="background: limegreen">
+          <h2>NFT</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             libero magni sequi ex quidem deleniti in, similique odit neque
@@ -505,26 +546,17 @@
             officia deleniti aut!
           </p>
         </div>
-        <div class="card_hor">
-          <div class="raffle_card" style="background: limegreen">
-            <h2>NFT</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              libero magni sequi ex quidem deleniti in, similique odit neque
-              excepturi quasi doloremque. Sit distinctio nam debitis cupiditate
-              officia deleniti aut!
-            </p>
-          </div>
-          <div class="raffle_card">
-            <h2>NFT Membership</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              libero magni sequi ex quidem deleniti in, similique odit neque
-              excepturi quasi doloremque. Sit distinctio nam debitis cupiditate
-              officia deleniti aut!
-            </p>
-          </div>
+        <div class="raffle_card">
+          <h2>NFT Membership</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            libero magni sequi ex quidem deleniti in, similique odit neque
+            excepturi quasi doloremque. Sit distinctio nam debitis cupiditate
+            officia deleniti aut!
+          </p>
         </div>
+      </div>
+      <div class="raffle_card" style="background: #191919">
         <div class="disclaimer">
           <h2>Disclaimer</h2>
           <p>
@@ -537,11 +569,8 @@
             showcase the amount in $ that is currently in the prize pool.
           </p>
         </div>
-      </section>
-      <!-- <div id="scroll">
-        <i class="fa fa-angle-up" style="font-size: 30px"></i>
-      </div> -->
-    </div>
+      </div>
+    </section>
     <div class="footer">
       <div class="copyright">
         <p>&copy; Joker-Inu 2022. All rights reserved.</p>
