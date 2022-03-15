@@ -863,3 +863,9 @@ h2 > span {
     font-size: 32px;
   }
 }
+
+@media screen and (max-width: 667px) {
+  .nav_mobile {
+    height: 50vh;
+  }
+}
