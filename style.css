@@ -864,7 +864,7 @@ h2 > span {
   }
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (min-width: 667px) {
   .nav_mobile {
     height: 50vh;
   }
