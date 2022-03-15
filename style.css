@@ -379,15 +379,21 @@ main {
   align-items: center;
 }
 
-.nft > img {
-  width: 30%;
-  margin: 20px;
+.nft > div > img {
+  width: 95%;
+  margin: 20px auto;
   border-radius: 10px;
   transition: 0.3s ease;
 }
 
-.nft > img:hover {
+.nft > div > img:hover {
   transform: scale(1.1);
+}
+
+.nft > div > p {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 500;
 }
 
 #raffle {
@@ -491,10 +497,10 @@ details {
 
 .phase_content {
   text-align: left;
-  padding: 10% 30px;
+  padding: 5% 30px;
   border-radius: 4px;
   width: 320px;
-  height: 410px;
+  height: 350px;
   line-height: 30px;
 }
 
@@ -660,7 +666,7 @@ h2 > span {
     opacity: 0;
   }
   100% {
-    top: 20%;
+    top: 18%;
     opacity: 1;
   }
 }
@@ -699,6 +705,7 @@ h2 > span {
     animation: fadein 2s 1 forwards;
   }
   .moon {
+    z-index: -3;
     animation: rise-fadein-mobile 2s 1 forwards;
     animation-delay: 2s;
   }
@@ -751,10 +758,13 @@ h2 > span {
   }
   .phase_content {
     width: 250px;
-    height: 520px;
+    height: 400px;
+  }
+  .phase2_1 {
+    height: 300px;
   }
   .phase_fit {
-    height: 290px;
+    height: 450px;
   }
   .coming_soon {
     height: 120px;
