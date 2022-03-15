@@ -51,7 +51,7 @@ ul {
   max-width: 1200px;
   margin: auto;
   height: 100vh;
-  max-height: 1080px;
+  max-height: 820px;
   position: relative;
   overflow: hidden;
 }
@@ -550,8 +550,8 @@ li > i {
   color: var(--green);
 }
 
-.middle_social {
-  margin: 0 30px;
+.social_list > li {
+  margin: 0 10px;
 }
 
 .joker_main {

@@ -24,10 +24,6 @@ $(document).ready(function () {
 		reset
 	});
 
-	sr.reveal('#utilities', {});
-	sr.reveal('.card', { delay: 200 });
-	sr.reveal('.nft > img', { delay: 200 });
-
 	sr.reveal('.prize_pool', {});
 	sr.reveal('.raffle', { delay: 200 });
 
@@ -37,9 +33,6 @@ $(document).ready(function () {
 		duration,
 		reset
 	});
-
-	sr.reveal('#tax', {});
-	sr.reveal('.tokenomics_content', {});
 
 	sr.reveal('#how_to > h1', {});
 	sr.reveal('.raffle_card', { delay: 200 });
@@ -55,9 +48,4 @@ $(document).ready(function () {
 
 	sr.reveal('#how_work > h1', {});
 	sr.reveal('#how_work > p', { delay: 200 });
-
-	sr.reveal('.content_faq > div', { delay: 200 });
-
-	sr.reveal('#team > div > p', {});
-	sr.reveal('.all_team', { delay: 200 });
 });
