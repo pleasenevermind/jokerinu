@@ -1,9 +1,10 @@
 $(document).ready(function () {
 	const reset = false;
+	const duration = 600;
 	let sr = ScrollReveal({
 		origin: 'top',
 		distance: '80px',
-		duration: 2000,
+		duration,
 		reset
 	});
 
@@ -19,7 +20,7 @@ $(document).ready(function () {
 	sr = ScrollReveal({
 		origin: 'left',
 		distance: '80px',
-		duration: 2000,
+		duration,
 		reset
 	});
 
@@ -33,7 +34,7 @@ $(document).ready(function () {
 	sr = ScrollReveal({
 		origin: 'left',
 		distance: '80px',
-		duration: 2000,
+		duration,
 		reset
 	});
 
@@ -46,7 +47,7 @@ $(document).ready(function () {
 	sr = ScrollReveal({
 		origin: 'bottom',
 		distance: '80px',
-		duration: 2000,
+		duration,
 		reset
 	});
 

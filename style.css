@@ -250,7 +250,7 @@ main {
 
 .btn.filled.mobile {
   display: none;
-  max-width: 100px;
+  max-width: 150px;
   margin: auto;
 }
 
