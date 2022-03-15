@@ -113,50 +113,46 @@
   </head>
   <body class="preload">
     <div id="mobile_nav" class="nav_mobile">
-      <i
-        class="fas fa-times"
-        onclick="document.getElementById('mobile_nav').style.display = 'none';"
-      ></i>
       <ul>
         <li>
           <a
             href="#about"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >About</a
           >
         </li>
         <li>
           <a
             href="#utilities"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >Utilities</a
           >
         </li>
         <li>
           <a
             href="#tokenomics"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >Tokenomics</a
           >
         </li>
         <li>
           <a
             href="#roadmap"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >Roadmap</a
           >
         </li>
         <li>
           <a
             href="#team"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >Team</a
           >
         </li>
         <li>
           <a
-            href="#faq"
-            onclick="document.getElementById('mobile_nav').style.display = 'none';"
+            href="#faq_section"
+            onclick="document.getElementById('mobile_nav').classList.toggle('display')"
             >FAQ</a
           >
         </li>
@@ -171,7 +167,7 @@
         </div>
         <i
           class="fa-solid fa-bars"
-          onclick="document.getElementById('mobile_nav').style.display = 'block'"
+          onclick="document.getElementById('mobile_nav').classList.toggle('display')"
         ></i>
         <ul class="navbar-list">
           <li><a href="#about">About</a></li>
@@ -179,7 +175,7 @@
           <li><a href="#tokenomics">Tokenomics</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#faq_section">FAQ</a></li>
         </ul>
         <a href="#" class="btn filled">Buy Now</a>
       </div>
