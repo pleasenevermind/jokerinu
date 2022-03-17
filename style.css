@@ -775,6 +775,9 @@ h2 > span {
   .tokenomics_content > h2 {
     text-align: center;
   }
+  .tokenomics_content > p {
+    text-align: justify;
+  }
   .about_content {
     padding: 5% 10%;
   }
