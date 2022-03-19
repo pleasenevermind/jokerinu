@@ -1469,8 +1469,6 @@ h2 > span {
 .raffle_banner table th {
   color: var(--green);
 }
-.raffle_banner table td {
-}
 
 #hero_section {
   display: flex;
@@ -1480,7 +1478,7 @@ h2 > span {
   margin: auto;
 }
 
-#hero_section > div > img {
+#raffle_img {
   max-width: 600px;
 }
 
