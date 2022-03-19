@@ -1273,6 +1273,11 @@ h2 > span {
   background: #6216af;
 }
 
+#swap {
+  padding-right: 0;
+  max-width: 450px;
+}
+
 @media screen and (min-width: 1000px) {
   #how_to,
   #how_work {
@@ -1281,6 +1286,10 @@ h2 > span {
 }
 
 @media screen and (max-width: 1000px) {
+  #swap {
+    padding-right: 10%;
+    padding-top: 0;
+  }
   .raffle_card {
     text-align: center;
   }
