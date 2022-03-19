@@ -889,7 +889,7 @@ h2 > span {
   padding: 2%;
 }
 .main_heading {
-  font-size: 300%;
+  font-size: 250%;
   text-align: center;
   color: limegreen;
   font-family: "Shadows Into Light", cursive;
@@ -1014,8 +1014,8 @@ h2 > span {
 }
 .prize_pool > p {
   font-weight: 900;
-  font-size: 3rem;
-  margin: 10px auto;
+  font-size: 1.5rem;
+  margin: 20px auto 10px;
 }
 
 @media (min-width: 960px) {
@@ -1031,7 +1031,8 @@ h2 > span {
   position: relative;
   height: 100%;
 }
-#raffle-red div {
+
+#raffle-red-first div {
   background-image: radial-gradient(
       circle at top left,
       transparent 17px,
@@ -1044,20 +1045,8 @@ h2 > span {
   background-size: 50% 50%;
   background-position: top left, top right, bottom left, bottom right;
 }
-.raffle div {
-  width: 220px;
-  height: 110px;
-  margin-left: -110px;
-  margin-top: -55px;
-  background-repeat: no-repeat;
-}
 
-.entry div {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-#raffle-red div:before {
+#raffle-red-first div:before {
   content: "# 59";
   width: 234px;
   height: 76px;
@@ -1074,6 +1063,143 @@ h2 > span {
   line-height: 1.9;
   font-size: 42px;
   text-align: left;
+}
+
+#raffle-red-first div:after {
+  content: "First";
+  color: #fff;
+  font-weight: 900;
+  width: 75px;
+  height: 185px;
+  padding-top: 162px;
+  top: -37px;
+  left: 72px;
+  background: linear-gradient(
+    to bottom,
+    transparent 155px,
+    #fa8072 155px,
+    #fa8072 158px,
+    transparent 158px
+  );
+  border: 3px solid #fa8072;
+}
+
+#raffle-red-second div {
+  background-image: radial-gradient(
+      circle at top left,
+      transparent 17px,
+      #dc143c 17px
+    ),
+    radial-gradient(circle at top right, transparent 17px, #dc143c 17px),
+    radial-gradient(circle at bottom left, transparent 17px, #dc143c 17px),
+    radial-gradient(circle at bottom right, transparent 17px, #dc143c 17px);
+  box-shadow: 0 38px 14px -35px rgba(0, 0, 0, 0.3);
+  background-size: 50% 50%;
+  background-position: top left, top right, bottom left, bottom right;
+}
+
+#raffle-red-second div:before {
+  content: "# 67";
+  width: 234px;
+  height: 76px;
+  padding-left: 70px;
+  left: -7px;
+  top: 17px;
+  background-size: 7px 7px;
+  background-repeat: repeat-y;
+  background-position: 0 0, 0 0, 100% 0, 100% 0;
+  background-image: linear-gradient(45deg, transparent 75%, #dc143c 75%),
+    linear-gradient(135deg, transparent 75%, #dc143c 75%),
+    linear-gradient(-45deg, transparent 75%, #dc143c 75%),
+    linear-gradient(-135deg, transparent 75%, #dc143c 75%);
+  line-height: 1.9;
+  font-size: 42px;
+  text-align: left;
+}
+
+#raffle-red-second div:after {
+  content: "Second";
+  color: #fff;
+  font-weight: 900;
+  width: 75px;
+  height: 185px;
+  padding-top: 162px;
+  top: -37px;
+  left: 72px;
+  background: linear-gradient(
+    to bottom,
+    transparent 155px,
+    #fa8072 155px,
+    #fa8072 158px,
+    transparent 158px
+  );
+  border: 3px solid #fa8072;
+}
+
+#raffle-red-third div {
+  background-image: radial-gradient(
+      circle at top left,
+      transparent 17px,
+      #dc143c 17px
+    ),
+    radial-gradient(circle at top right, transparent 17px, #dc143c 17px),
+    radial-gradient(circle at bottom left, transparent 17px, #dc143c 17px),
+    radial-gradient(circle at bottom right, transparent 17px, #dc143c 17px);
+  box-shadow: 0 38px 14px -35px rgba(0, 0, 0, 0.3);
+  background-size: 50% 50%;
+  background-position: top left, top right, bottom left, bottom right;
+}
+
+#raffle-red-third div:before {
+  content: "# 13";
+  width: 234px;
+  height: 76px;
+  padding-left: 70px;
+  left: -7px;
+  top: 17px;
+  background-size: 7px 7px;
+  background-repeat: repeat-y;
+  background-position: 0 0, 0 0, 100% 0, 100% 0;
+  background-image: linear-gradient(45deg, transparent 75%, #dc143c 75%),
+    linear-gradient(135deg, transparent 75%, #dc143c 75%),
+    linear-gradient(-45deg, transparent 75%, #dc143c 75%),
+    linear-gradient(-135deg, transparent 75%, #dc143c 75%);
+  line-height: 1.9;
+  font-size: 42px;
+  text-align: left;
+}
+
+#raffle-red-third div:after {
+  content: "Third";
+  color: #fff;
+  font-weight: 900;
+  width: 75px;
+  height: 185px;
+  padding-top: 162px;
+  top: -37px;
+  left: 72px;
+  background: linear-gradient(
+    to bottom,
+    transparent 155px,
+    #fa8072 155px,
+    #fa8072 158px,
+    transparent 158px
+  );
+  border: 3px solid #fa8072;
+}
+
+.raffle div {
+  width: 220px;
+  height: 110px;
+  margin-left: -110px;
+  margin-top: -55px;
+  background-repeat: no-repeat;
+}
+
+.entry div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .raffle div:before {
@@ -1094,24 +1220,6 @@ h2 > span {
   display: block;
   content: "";
   position: absolute;
-}
-#raffle-red div:after {
-  content: "Holder";
-  color: #fff;
-  font-weight: 900;
-  width: 75px;
-  height: 185px;
-  padding-top: 162px;
-  top: -37px;
-  left: 72px;
-  background: linear-gradient(
-    to bottom,
-    transparent 155px,
-    #fa8072 155px,
-    #fa8072 158px,
-    transparent 158px
-  );
-  border: 3px solid #fa8072;
 }
 
 .raffle div:after {
@@ -1177,7 +1285,7 @@ h2 > span {
     text-align: center;
   }
   .entry.raffle {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .ticket_container {
     flex-direction: column;
@@ -1339,7 +1447,88 @@ h2 > span {
   right: 0;
   top: -100%;
 }
+
+.raffle_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #250847;
+  border-radius: 4px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.raffle_banner > table {
+  border-radius: 4px;
+  border: 2px solid #250847;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.raffle_banner table th {
+  color: var(--green);
+}
+.raffle_banner table td {
+}
+
+#hero_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#hero_section > div > img {
+  max-width: 600px;
+}
+
+#prize {
+  background: #200847;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #f3e5c8, 0 0 2px #fff, 0 0 3px #cfc09f, 0 0 4px #cfc09f,
+      0 0 5px #cfc09f, 0 0 6px #cfc09f, 0 0 7px #cfc09f;
+  }
+
+  to {
+    text-shadow: 0 0 2px #f3e5c8, 0 0 4px goldenrod, 0 0 6px goldenrod,
+      0 0 8px goldenrod, 0 0 10px goldenrod, 0 0 12px goldenrod,
+      0 0 14px goldenrod;
+  }
+}
+
+#prize_money {
+  letter-spacing: 5px;
+  animation: glow 1.5s linear infinite alternate;
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    /* #634f2c 24%, */ #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18vw;
+  margin: 0;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 1000px) {
+  .raffle_main {
+    padding: 0;
+  }
   .main-content .countdown-block {
     margin-right: 10px;
   }
@@ -1349,5 +1538,14 @@ h2 > span {
   }
   .subtitle {
     font-size: 14px;
+  }
+  #hero_section {
+    flex-direction: column;
+  }
+  #hero_section > div {
+    width: 100%;
+  }
+  #hero_section > div > img {
+    max-width: 100%;
   }
 }

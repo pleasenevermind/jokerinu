@@ -9,7 +9,7 @@ $(document).ready(function () {
             labels: ["Marketing", "Raffle", "Team", "Liquidity"],
             datasets: [
                 {
-                    data: [3, 2, 2, 3],
+                    data: [5, 2, 2, 2],
                     backgroundColor: [
                         "rgba(171, 93, 238)",
                         "rgb(218, 165, 32)",

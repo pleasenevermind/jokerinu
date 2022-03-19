@@ -119,126 +119,105 @@
         </a>
       </div>
       <div class="raffle_main">
-        <!-- <section>
-          <main class="main-content">
+        <section id="hero_section">
+          <div>
             <h1 class="main_heading">NEXT RAFFLE</h1>
-            <div class="container-countdown">
-              <section class="countdown-block">
-                <span class="days time-element">
-                  <span class="top">00</span>
-                  <span class="top-back">
-                    <span>00</span>
-                  </span>
-                  <span class="bottom">00</span>
-                  <span class="bottom-back">
-                    <span>00</span>
-                  </span>
-                </span>
-                <h2 class="subtitle">Days</h2>
-              </section>
-              <section class="countdown-block">
-                <span class="hours time-element">
-                  <span class="top">00</span>
-                  <span class="top-back">
-                    <span>00</span>
-                  </span>
-                  <span class="bottom">00</span>
-                  <span class="bottom-back">
-                    <span>00</span>
-                  </span>
-                </span>
-                <h2 class="subtitle">Hours</h2>
-              </section>
-              <section class="countdown-block">
-                <span class="minutes time-element">
-                  <span class="top">00</span>
-                  <span class="top-back">
-                    <span>00</span>
-                  </span>
-                  <span class="bottom">00</span>
-                  <span class="bottom-back">
-                    <span>00</span>
-                  </span>
-                </span>
-                <h2 class="subtitle">Minutes</h2>
-              </section>
-              <section class="countdown-block">
-                <span class="seconds time-element">
-                  <span class="top">00</span>
-                  <span class="top-back">
-                    <span>00</span>
-                  </span>
-                  <span class="bottom">00</span>
-                  <span class="bottom-back">
-                    <span>00</span>
-                  </span>
-                </span>
-                <h2 class="subtitle">Seconds</h2>
-              </section>
-            </div>
-          </main>
-        </section> -->
-        <h1 class="main_heading">NEXT RAFFLE</h1>
-        <div class="" style="text-align: center">
-          <div class="timer_container">
-            <!-- <h1 id="headline" style="text-align: center">COMING SOON</h1> -->
-            <div id="countdown">
-              <ul>
-                <li><span id="days"></span>days</li>
-                <li><span id="hours"></span>Hours</li>
-                <li><span id="minutes"></span>Minutes</li>
-                <li><span id="seconds"></span>Seconds</li>
-              </ul>
-            </div>
-            <div id="content" class="emoji">
-              <!-- <span>&#x1F34C;</span>
-            <span>&#x1F34C;</span>
-            <span>&#x1F34C;</span> -->
+            <div class="timer_container">
+              <!-- <h1 id="headline" style="text-align: center">COMING SOON</h1> -->
+              <div id="countdown">
+                <ul>
+                  <li><span id="days"></span>days</li>
+                  <li><span id="hours"></span>Hours</li>
+                  <li><span id="minutes"></span>Minutes</li>
+                  <li><span id="seconds"></span>Seconds</li>
+                </ul>
+              </div>
+              <div id="content" class="emoji">
+                <!-- <span>&#x1F34C;</span>
+                <span>&#x1F34C;</span>
+                <span>&#x1F34C;</span> -->
+              </div>
             </div>
           </div>
+          <div>
+            <img id="raffle_img" src="./images/raffle.png" alt="" />
+          </div>
+        </section>
+        <div class="raffle_banner">
+          <table>
+            <th>Your Rank</th>
+            <th>Tickets Available</th>
+            <tr>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+          </table>
+          <!-- <p>Your Rank: <span>1st</span></p>
+          <p>Tickets Available: <span>59, 58, 98</span></p> -->
         </div>
         <div
           class="carsd_hor"
           style="max-width: 1000px; margin: 20px auto; padding: 5% 0"
         >
           <div class="prize_pool">
-            <h1 class="main_heading">Prize Pool</h1>
-            <p id="prize_money">$3000</p>
-            <strong>Top three winners</strong>
+            <div id="prize">
+              <p
+                style="
+                  background: goldenrod;
+                  font-size: large;
+                  color: #200847;
+                  border-radius: 10px 10px 0 0;
+                  font-weight: 700;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                "
+              >
+                Prize Pool
+              </p>
+              <p
+                style="
+                  color: goldenrod;
+                  font-weight: 900;
+                  font-size: 3rem;
+                  margin: 0;
+                "
+                id="prize_money"
+              >
+                $3000
+              </p>
+            </div>
+            <p style="color: goldenrod">Top three winners</p>
             <div class="ticket_container">
-              <div id="raffle-red" class="entry raffle">
+              <div id="raffle-red-first" class="entry raffle">
                 <div class="no-scale"></div>
               </div>
-              <div id="raffle-red" class="entry raffle">
+              <div id="raffle-red-second" class="entry raffle">
                 <div class="no-scale"></div>
               </div>
-              <div id="raffle-red" class="entry raffle">
+              <div id="raffle-red-third" class="entry raffle">
                 <div class="no-scale"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="raffle_card" style="max-width: 600px; margin: auto">
+        <!-- <div class="raffle_card" style="max-width: 600px; margin: auto">
           <label for="token">Your Rank</label>
           <input id="token" type="number" disabled value="0.00" />
           <label for="ticket">Tickets Available</label>
           <input id="ticket" type="number" disabled value="0.00" />
-          <label for="ticket">Money Won</label>
-          <input id="ticket" type="number" disabled value="0.00" />
-          <!-- <a href="#" class="btn claim">Claim</a> -->
-        </div>
+        </div> -->
       </div>
     </div>
     <section id="how_work">
       <h1 class="main_heading">How it works?</h1>
       <p>
         2% buy/sell tax goes directly to our Raffle Wallet. The raffle draw will
-        be recurring every 4-7 days, rewarding EVERYONE that partakes:
+        be recurring every 7 days, rewarding 50% of the wallet to the winners:
       </p>
       <ul style="text-align: center">
-        <li>1st:</li>
-        <li>2nd:</li>
-        <li>3rd:</li>
+        <li>1st: 20%</li>
+        <li>2nd: 15%</li>
+        <li>3rd: 15%</li>
       </ul>
       <p>
         The draw will be fully automated and the winning tickets will appear on
@@ -307,13 +286,20 @@
       <div class="social">
         <ul class="social_list">
           <li>
-            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://t.me/Jokerinuofficial"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
           </li>
           <li class="middle_social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/jokerinu_?s=21"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-medium-m"></i></a>
           </li>
         </ul>
       </div>
