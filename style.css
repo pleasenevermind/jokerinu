@@ -1285,7 +1285,7 @@ h2 > span {
     text-align: center;
   }
   .entry.raffle {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .ticket_container {
     flex-direction: column;
