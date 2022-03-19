@@ -1088,11 +1088,11 @@ h2 > span {
   background-image: radial-gradient(
       circle at top left,
       transparent 17px,
-      #dc143c 17px
+      goldenrod 17px
     ),
-    radial-gradient(circle at top right, transparent 17px, #dc143c 17px),
-    radial-gradient(circle at bottom left, transparent 17px, #dc143c 17px),
-    radial-gradient(circle at bottom right, transparent 17px, #dc143c 17px);
+    radial-gradient(circle at top right, transparent 17px, goldenrod 17px),
+    radial-gradient(circle at bottom left, transparent 17px, goldenrod 17px),
+    radial-gradient(circle at bottom right, transparent 17px, goldenrod 17px);
   box-shadow: 0 38px 14px -35px rgba(0, 0, 0, 0.3);
   background-size: 50% 50%;
   background-position: top left, top right, bottom left, bottom right;
@@ -1108,10 +1108,10 @@ h2 > span {
   background-size: 7px 7px;
   background-repeat: repeat-y;
   background-position: 0 0, 0 0, 100% 0, 100% 0;
-  background-image: linear-gradient(45deg, transparent 75%, #dc143c 75%),
-    linear-gradient(135deg, transparent 75%, #dc143c 75%),
-    linear-gradient(-45deg, transparent 75%, #dc143c 75%),
-    linear-gradient(-135deg, transparent 75%, #dc143c 75%);
+  background-image: linear-gradient(45deg, transparent 75%, goldenrod 75%),
+    linear-gradient(135deg, transparent 75%, goldenrod 75%),
+    linear-gradient(-45deg, transparent 75%, goldenrod 75%),
+    linear-gradient(-135deg, transparent 75%, goldenrod 75%);
   line-height: 1.9;
   font-size: 42px;
   text-align: left;
@@ -1140,11 +1140,11 @@ h2 > span {
   background-image: radial-gradient(
       circle at top left,
       transparent 17px,
-      #dc143c 17px
+      var(--green) 17px
     ),
-    radial-gradient(circle at top right, transparent 17px, #dc143c 17px),
-    radial-gradient(circle at bottom left, transparent 17px, #dc143c 17px),
-    radial-gradient(circle at bottom right, transparent 17px, #dc143c 17px);
+    radial-gradient(circle at top right, transparent 17px, var(--green) 17px),
+    radial-gradient(circle at bottom left, transparent 17px, var(--green) 17px),
+    radial-gradient(circle at bottom right, transparent 17px, var(--green) 17px);
   box-shadow: 0 38px 14px -35px rgba(0, 0, 0, 0.3);
   background-size: 50% 50%;
   background-position: top left, top right, bottom left, bottom right;
@@ -1160,10 +1160,10 @@ h2 > span {
   background-size: 7px 7px;
   background-repeat: repeat-y;
   background-position: 0 0, 0 0, 100% 0, 100% 0;
-  background-image: linear-gradient(45deg, transparent 75%, #dc143c 75%),
-    linear-gradient(135deg, transparent 75%, #dc143c 75%),
-    linear-gradient(-45deg, transparent 75%, #dc143c 75%),
-    linear-gradient(-135deg, transparent 75%, #dc143c 75%);
+  background-image: linear-gradient(45deg, transparent 75%, var(--green) 75%),
+    linear-gradient(135deg, transparent 75%, var(--green) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--green) 75%),
+    linear-gradient(-135deg, transparent 75%, var(--green) 75%);
   line-height: 1.9;
   font-size: 42px;
   text-align: left;
