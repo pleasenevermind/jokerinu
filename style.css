@@ -1047,7 +1047,7 @@ h2 > span {
 }
 
 #raffle-red-first div:before {
-  content: "# 59";
+  content: attr(data-value);
   width: 234px;
   height: 76px;
   padding-left: 70px;
@@ -1099,7 +1099,7 @@ h2 > span {
 }
 
 #raffle-red-second div:before {
-  content: "# 67";
+  content: attr(data-value);
   width: 234px;
   height: 76px;
   padding-left: 70px;
@@ -1151,7 +1151,7 @@ h2 > span {
 }
 
 #raffle-red-third div:before {
-  content: "# 13";
+  content: attr(data-value);
   width: 234px;
   height: 76px;
   padding-left: 70px;

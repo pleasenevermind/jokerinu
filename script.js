@@ -71,7 +71,12 @@ $(document).ready(function () {
             "$" + Math.floor(Math.random() * 500000) + 1;
     }, 1000 * 1);
 
-    // const z = setInterval(function () {
-    //     $("#raffle-red div").attr('data-before', Math.floor(Math.random() * 5000) + 1);
-    // }, 1000 * 1);
+    var first = document.querySelector('#raffle-red-first div');
+    var sec = document.querySelector('#raffle-red-second div');
+    var third = document.querySelector('#raffle-red-third div');
+    const z = setInterval(function () {
+        first.setAttribute('data-value', "#" + Math.floor(Math.random() * 100) + 1);
+        sec.setAttribute('data-value', "#" + Math.floor(Math.random() * 100) + 1);
+        third.setAttribute('data-value', "#" + Math.floor(Math.random() * 100) + 1);
+    }, 1000 * 1);
 })();
