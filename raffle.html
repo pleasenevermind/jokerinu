@@ -116,6 +116,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="animations.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body style="background: #360b61">
     <div class="raffle_container">
@@ -130,12 +131,31 @@
           Connect
         </a>
       </div>
+      <!-- <div id="under_dev">
+        <em
+          id="cross"
+          class="fas fa-times"
+          onclick="document.getElementById('under_dev').classList.toggle('display')"
+        ></em>
+        <h1>Feature Under Development</h1>
+        <p>
+          This feature is currently under development. For further updates,
+          please stay tuned in our Telegram. We will announce, once this is
+          fully developed and ready to be used.
+        </p>
+      </div> -->
       <div class="raffle_main">
-        <section id="hero_section">
+        <!-- <lottie-player
+          src="./images/car.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player> -->
+        <!-- <section id="hero_section">
           <div>
             <h1 class="main_heading">NEXT RAFFLE</h1>
             <div class="timer_container">
-              <!-- <h1 id="headline" style="text-align: center">COMING SOON</h1> -->
               <div id="countdown">
                 <ul>
                   <li><span id="days"></span>days</li>
@@ -152,16 +172,16 @@
             alt="raffle_img"
             loading="lazy"
           />
-        </section>
+        </section> -->
         <div class="raffle_banner">
-          <table class="table">
+          <!-- <table class="table">
             <th>Your Rank</th>
             <th>Tickets Available</th>
             <tr>
               <td>N/A</td>
               <td>N/A</td>
             </tr>
-          </table>
+          </table> -->
           <!-- <p>Your Rank: <span>1st</span></p>
           <p>Tickets Available: <span>59, 58, 98</span></p> -->
         </div>
@@ -196,8 +216,18 @@
                 $3000
               </p>
             </div>
-            <p style="color: goldenrod">Top three winners</p>
-            <div class="ticket_container">
+            <p style="color: goldenrod; text-transform: uppercase">
+              Congratulations
+            </p>
+            <lottie-player
+              src="https://assets9.lottiefiles.com/packages/lf20_olpxozrh.json"
+              background="transparent"
+              speed="2"
+              style="width: 300px; height: 300px; margin: auto"
+              loop
+              autoplay
+            ></lottie-player>
+            <!-- <div class="ticket_container">
               <div id="raffle-red-first" class="entry raffle">
                 <div id="red-ticket" class="no-scale"></div>
               </div>
@@ -207,6 +237,30 @@
               <div id="raffle-red-third" class="entry raffle">
                 <div class="no-scale"></div>
               </div>
+            </div> -->
+            <div class="raffle_banner" style="margin-top: 10px">
+              <table class="table" style="overflow-x: auto">
+                <th>Position</th>
+                <th>Address</th>
+                <tr>
+                  <td style="width: 100px">1st 🥇</td>
+                  <td>0x916404C4B1edd240810b1B781dcf1835f4d31Aa2</td>
+                </tr>
+                <tr>
+                  <td>2nd 🥈</td>
+                  <td style="text-overflow: ellipsis; width: 250px">
+                    0xde958ede6CA0C58a12D4Bdf4eEe55f197448F79b
+                  </td>
+                </tr>
+                <tr>
+                  <td>3rd 🥉</td>
+                  <td style="text-overflow: ellipsis; width: 250px">
+                    0x96f1d024d6805CF3a055dA00e12cFA3843eF9114
+                  </td>
+                </tr>
+              </table>
+              <!-- <p>Your Rank: <span>1st</span></p>
+              <p>Tickets Available: <span>59, 58, 98</span></p> -->
             </div>
           </div>
         </div>
@@ -323,6 +377,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script_raffle.js"></script>
   </body>
 </html>
