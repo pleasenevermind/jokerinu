@@ -124,6 +124,13 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body class="preload">
+    <div id="preloader">
+      <div class="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div id="mobile_nav" class="nav_mobile">
       <ul>
         <li>
@@ -617,5 +624,10 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        document.getElementById("preloader").style.display = "none";
+      });
+    </script>
   </body>
 </html>
